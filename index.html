@@ -9,31 +9,37 @@
 </head>
 
 <body>
-  <div id="app">
-    <header>
-      <h1>Consultar CEP</h1>
-    </header>
 
-    <main>
-      <form id="consultarCep">
+  <main class="container">
 
-        <label>CEP
-          <input name="cep" type="number" maxlength="8">
-        </label>
+    <article>
+      <header>
+        <h1>Consultar CEP</h1>
+      </header>
 
-        <button id="btnConsultarCep">Consultar</button>
+      <section class="grid">
 
-      </form>
+        <form id="consultarCep">
 
-      <br>
+          <label>CEP
+            <input name="cep" type="text" maxlength="8" minlength="8" required>
+          </label>
 
-     <div id="dados">
-        
-     </div>
+          <button id="btnConsultarCep">Consultar</button>
 
-    </main>
+        </form>
 
-  </div>
+        <br>
+
+        <div id="dados">
+
+        </div>
+      </section>
+    </article>
+
+  </main>
+
+
 
   <script type="module" src="/main.js"></script>
 
